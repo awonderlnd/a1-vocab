@@ -114,7 +114,7 @@ body{font-family:"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);colo
 .wc{background:var(--surf);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:6px;padding:7px 10px;transition:background .15s}
 .wc:hover{background:var(--surf2)}
 .wc.v{border-left-color:var(--accent)}.wc.a{border-left-color:var(--warm)}.wc.p{border-left-color:var(--purple)}.wc.f{border-left-color:var(--red)}
-.wc.hidden{display:none!important}
+.wc.hidden,.sitem.hidden{display:none!important}
 .wde{font-size:13px;font-weight:600;color:var(--text);line-height:1.3}
 .wgr{font-weight:400;font-size:11px;color:var(--text3)}
 .wru{font-size:12px;color:var(--green);margin-top:2px}
@@ -306,55 +306,55 @@ body{font-family:"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);colo
 <div class="sdesc">Числа нужны везде: возраст, адрес, цена, время. Количественные (1, 2, 3…) &mdash; для счёта. Порядковые (первый, второй…) &mdash; для дат и этажей.</div>
 <div class="subsec"><div class="subh">Количественные числительные</div>
 <div class="ng">
-<div class="ni"><span class="nn">1</span><div><div class="nw">eins</div><div class="nr">один</div></div></div>
-<div class="ni"><span class="nn">2</span><div><div class="nw">zwei</div><div class="nr">два</div></div></div>
-<div class="ni"><span class="nn">3</span><div><div class="nw">drei</div><div class="nr">три</div></div></div>
-<div class="ni"><span class="nn">4</span><div><div class="nw">vier</div><div class="nr">четыре</div></div></div>
-<div class="ni"><span class="nn">5</span><div><div class="nw">fünf</div><div class="nr">пять</div></div></div>
-<div class="ni"><span class="nn">6</span><div><div class="nw">sechs</div><div class="nr">шесть</div></div></div>
-<div class="ni"><span class="nn">7</span><div><div class="nw">sieben</div><div class="nr">семь</div></div></div>
-<div class="ni"><span class="nn">8</span><div><div class="nw">acht</div><div class="nr">восемь</div></div></div>
-<div class="ni"><span class="nn">9</span><div><div class="nw">neun</div><div class="nr">девять</div></div></div>
-<div class="ni"><span class="nn">10</span><div><div class="nw">zehn</div><div class="nr">десять</div></div></div>
-<div class="ni"><span class="nn">11</span><div><div class="nw">elf</div><div class="nr">одиннадцать</div></div></div>
-<div class="ni"><span class="nn">12</span><div><div class="nw">zwölf</div><div class="nr">двенадцать</div></div></div>
-<div class="ni"><span class="nn">13</span><div><div class="nw">dreizehn</div><div class="nr">тринадцать</div></div></div>
-<div class="ni"><span class="nn">14</span><div><div class="nw">vierzehn</div><div class="nr">четырнадцать</div></div></div>
-<div class="ni"><span class="nn">15</span><div><div class="nw">fünfzehn</div><div class="nr">пятнадцать</div></div></div>
-<div class="ni"><span class="nn">16</span><div><div class="nw">sechzehn</div><div class="nr">шестнадцать</div></div></div>
-<div class="ni"><span class="nn">17</span><div><div class="nw">siebzehn</div><div class="nr">семнадцать</div></div></div>
-<div class="ni"><span class="nn">18</span><div><div class="nw">achtzehn</div><div class="nr">восемнадцать</div></div></div>
-<div class="ni"><span class="nn">19</span><div><div class="nw">neunzehn</div><div class="nr">девятнадцать</div></div></div>
-<div class="ni"><span class="nn">20</span><div><div class="nw">zwanzig</div><div class="nr">двадцать</div></div></div>
-<div class="ni"><span class="nn">21</span><div><div class="nw">einundzwanzig</div><div class="nr">двадцать один</div></div></div>
-<div class="ni"><span class="nn">30</span><div><div class="nw">dreißig</div><div class="nr">тридцать</div></div></div>
-<div class="ni"><span class="nn">40</span><div><div class="nw">vierzig</div><div class="nr">сорок</div></div></div>
-<div class="ni"><span class="nn">50</span><div><div class="nw">fünfzig</div><div class="nr">пятьдесят</div></div></div>
-<div class="ni"><span class="nn">60</span><div><div class="nw">sechzig</div><div class="nr">шестьдесят</div></div></div>
-<div class="ni"><span class="nn">70</span><div><div class="nw">siebzig</div><div class="nr">семьдесят</div></div></div>
-<div class="ni"><span class="nn">80</span><div><div class="nw">achtzig</div><div class="nr">восемьдесят</div></div></div>
-<div class="ni"><span class="nn">90</span><div><div class="nw">neunzig</div><div class="nr">девяносто</div></div></div>
-<div class="ni"><span class="nn">100</span><div><div class="nw">(ein)hundert</div><div class="nr">сто</div></div></div>
-<div class="ni"><span class="nn">101</span><div><div class="nw">hunderteins</div><div class="nr">сто один</div></div></div>
-<div class="ni"><span class="nn">200</span><div><div class="nw">zweihundert</div><div class="nr">двести</div></div></div>
-<div class="ni"><span class="nn">1000</span><div><div class="nw">(ein)tausend</div><div class="nr">тысяча</div></div></div>
-<div class="ni"><span class="nn">1 000 000</span><div><div class="nw">eine Million</div><div class="nr">один миллион</div></div></div>
-<div class="ni"><span class="nn">1 000 000 000</span><div><div class="nw">eine Milliarde</div><div class="nr">один миллиард</div></div></div>
+<div class="ni sitem" data-de="eins" data-ru="один"><span class="nn">1</span><div><div class="nw">eins</div><div class="nr">один</div></div></div>
+<div class="ni sitem" data-de="zwei" data-ru="два"><span class="nn">2</span><div><div class="nw">zwei</div><div class="nr">два</div></div></div>
+<div class="ni sitem" data-de="drei" data-ru="три"><span class="nn">3</span><div><div class="nw">drei</div><div class="nr">три</div></div></div>
+<div class="ni sitem" data-de="vier" data-ru="четыре"><span class="nn">4</span><div><div class="nw">vier</div><div class="nr">четыре</div></div></div>
+<div class="ni sitem" data-de="fünf" data-ru="пять"><span class="nn">5</span><div><div class="nw">fünf</div><div class="nr">пять</div></div></div>
+<div class="ni sitem" data-de="sechs" data-ru="шесть"><span class="nn">6</span><div><div class="nw">sechs</div><div class="nr">шесть</div></div></div>
+<div class="ni sitem" data-de="sieben" data-ru="семь"><span class="nn">7</span><div><div class="nw">sieben</div><div class="nr">семь</div></div></div>
+<div class="ni sitem" data-de="acht" data-ru="восемь"><span class="nn">8</span><div><div class="nw">acht</div><div class="nr">восемь</div></div></div>
+<div class="ni sitem" data-de="neun" data-ru="девять"><span class="nn">9</span><div><div class="nw">neun</div><div class="nr">девять</div></div></div>
+<div class="ni sitem" data-de="zehn" data-ru="десять"><span class="nn">10</span><div><div class="nw">zehn</div><div class="nr">десять</div></div></div>
+<div class="ni sitem" data-de="elf" data-ru="одиннадцать"><span class="nn">11</span><div><div class="nw">elf</div><div class="nr">одиннадцать</div></div></div>
+<div class="ni sitem" data-de="zwölf" data-ru="двенадцать"><span class="nn">12</span><div><div class="nw">zwölf</div><div class="nr">двенадцать</div></div></div>
+<div class="ni sitem" data-de="dreizehn" data-ru="тринадцать"><span class="nn">13</span><div><div class="nw">dreizehn</div><div class="nr">тринадцать</div></div></div>
+<div class="ni sitem" data-de="vierzehn" data-ru="четырнадцать"><span class="nn">14</span><div><div class="nw">vierzehn</div><div class="nr">четырнадцать</div></div></div>
+<div class="ni sitem" data-de="fünfzehn" data-ru="пятнадцать"><span class="nn">15</span><div><div class="nw">fünfzehn</div><div class="nr">пятнадцать</div></div></div>
+<div class="ni sitem" data-de="sechzehn" data-ru="шестнадцать"><span class="nn">16</span><div><div class="nw">sechzehn</div><div class="nr">шестнадцать</div></div></div>
+<div class="ni sitem" data-de="siebzehn" data-ru="семнадцать"><span class="nn">17</span><div><div class="nw">siebzehn</div><div class="nr">семнадцать</div></div></div>
+<div class="ni sitem" data-de="achtzehn" data-ru="восемнадцать"><span class="nn">18</span><div><div class="nw">achtzehn</div><div class="nr">восемнадцать</div></div></div>
+<div class="ni sitem" data-de="neunzehn" data-ru="девятнадцать"><span class="nn">19</span><div><div class="nw">neunzehn</div><div class="nr">девятнадцать</div></div></div>
+<div class="ni sitem" data-de="zwanzig" data-ru="двадцать"><span class="nn">20</span><div><div class="nw">zwanzig</div><div class="nr">двадцать</div></div></div>
+<div class="ni sitem" data-de="einundzwanzig" data-ru="двадцать один"><span class="nn">21</span><div><div class="nw">einundzwanzig</div><div class="nr">двадцать один</div></div></div>
+<div class="ni sitem" data-de="dreißig" data-ru="тридцать"><span class="nn">30</span><div><div class="nw">dreißig</div><div class="nr">тридцать</div></div></div>
+<div class="ni sitem" data-de="vierzig" data-ru="сорок"><span class="nn">40</span><div><div class="nw">vierzig</div><div class="nr">сорок</div></div></div>
+<div class="ni sitem" data-de="fünfzig" data-ru="пятьдесят"><span class="nn">50</span><div><div class="nw">fünfzig</div><div class="nr">пятьдесят</div></div></div>
+<div class="ni sitem" data-de="sechzig" data-ru="шестьдесят"><span class="nn">60</span><div><div class="nw">sechzig</div><div class="nr">шестьдесят</div></div></div>
+<div class="ni sitem" data-de="siebzig" data-ru="семьдесят"><span class="nn">70</span><div><div class="nw">siebzig</div><div class="nr">семьдесят</div></div></div>
+<div class="ni sitem" data-de="achtzig" data-ru="восемьдесят"><span class="nn">80</span><div><div class="nw">achtzig</div><div class="nr">восемьдесят</div></div></div>
+<div class="ni sitem" data-de="neunzig" data-ru="девяносто"><span class="nn">90</span><div><div class="nw">neunzig</div><div class="nr">девяносто</div></div></div>
+<div class="ni sitem" data-de="(ein)hundert" data-ru="сто"><span class="nn">100</span><div><div class="nw">(ein)hundert</div><div class="nr">сто</div></div></div>
+<div class="ni sitem" data-de="hunderteins" data-ru="сто один"><span class="nn">101</span><div><div class="nw">hunderteins</div><div class="nr">сто один</div></div></div>
+<div class="ni sitem" data-de="zweihundert" data-ru="двести"><span class="nn">200</span><div><div class="nw">zweihundert</div><div class="nr">двести</div></div></div>
+<div class="ni sitem" data-de="(ein)tausend" data-ru="тысяча"><span class="nn">1000</span><div><div class="nw">(ein)tausend</div><div class="nr">тысяча</div></div></div>
+<div class="ni sitem" data-de="eine million" data-ru="один миллион"><span class="nn">1 000 000</span><div><div class="nw">eine Million</div><div class="nr">один миллион</div></div></div>
+<div class="ni sitem" data-de="eine milliarde" data-ru="один миллиард"><span class="nn">1 000 000 000</span><div><div class="nw">eine Milliarde</div><div class="nr">один миллиард</div></div></div>
 </div></div>
 <div class="subsec"><div class="subh">Порядковые числительные</div>
 <div class="sg">
-<div class="si2"><span class="de">der/die/das erste</span><span class="ru">первый/ая/ое</span></div>
-<div class="si2"><span class="de">zweite</span><span class="ru">второй</span></div>
-<div class="si2"><span class="de">dritte</span><span class="ru">третий</span></div>
-<div class="si2"><span class="de">vierte</span><span class="ru">четвёртый</span></div>
-<div class="si2"><span class="de">fünfte</span><span class="ru">пятый</span></div>
-<div class="si2"><span class="de">sechste</span><span class="ru">шестой</span></div>
-<div class="si2"><span class="de">siebte</span><span class="ru">седьмой</span></div>
-<div class="si2"><span class="de">achte</span><span class="ru">восьмой</span></div>
-<div class="si2"><span class="de">neunte</span><span class="ru">девятый</span></div>
-<div class="si2"><span class="de">zehnte</span><span class="ru">десятый</span></div>
-<div class="si2"><span class="de">zwanzigste</span><span class="ru">двадцатый</span></div>
-<div class="si2"><span class="de">hundertste</span><span class="ru">сотый</span></div>
+<div class="si2 sitem" data-de="der/die/das erste" data-ru="первый/ая/ое"><span class="de">der/die/das erste</span><span class="ru">первый/ая/ое</span></div>
+<div class="si2 sitem" data-de="zweite" data-ru="второй"><span class="de">zweite</span><span class="ru">второй</span></div>
+<div class="si2 sitem" data-de="dritte" data-ru="третий"><span class="de">dritte</span><span class="ru">третий</span></div>
+<div class="si2 sitem" data-de="vierte" data-ru="четвёртый"><span class="de">vierte</span><span class="ru">четвёртый</span></div>
+<div class="si2 sitem" data-de="fünfte" data-ru="пятый"><span class="de">fünfte</span><span class="ru">пятый</span></div>
+<div class="si2 sitem" data-de="sechste" data-ru="шестой"><span class="de">sechste</span><span class="ru">шестой</span></div>
+<div class="si2 sitem" data-de="siebte" data-ru="седьмой"><span class="de">siebte</span><span class="ru">седьмой</span></div>
+<div class="si2 sitem" data-de="achte" data-ru="восьмой"><span class="de">achte</span><span class="ru">восьмой</span></div>
+<div class="si2 sitem" data-de="neunte" data-ru="девятый"><span class="de">neunte</span><span class="ru">девятый</span></div>
+<div class="si2 sitem" data-de="zehnte" data-ru="десятый"><span class="de">zehnte</span><span class="ru">десятый</span></div>
+<div class="si2 sitem" data-de="zwanzigste" data-ru="двадцатый"><span class="de">zwanzigste</span><span class="ru">двадцатый</span></div>
+<div class="si2 sitem" data-de="hundertste" data-ru="сотый"><span class="de">hundertste</span><span class="ru">сотый</span></div>
 </div></div>
 </div>
 <div class="sec" id="datum">
@@ -378,116 +378,116 @@ body{font-family:"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);colo
 <div class="sh"><span class="sico2">&#128198;</span><div><div class="st">Дни, месяцы, сезоны &mdash; Wochentage · Monate · Jahreszeiten</div><div class="ss">Весь календарь и части суток</div></div></div>
 <div class="sdesc">Дни и месяцы — всегда мужского рода (der). Предлог: am Montag, am Freitag, im Januar, im Sommer.</div>
 <div class="subsec"><div class="subh">Части суток — Tageszeiten</div><div class="sg">
-<div class="si2"><span class="de">der Morgen</span><span class="ru">утро</span></div>
-<div class="si2"><span class="de">der Vormittag</span><span class="ru">первая половина дня</span></div>
-<div class="si2"><span class="de">der Mittag</span><span class="ru">полдень</span></div>
-<div class="si2"><span class="de">der Nachmittag</span><span class="ru">вторая половина дня / после обеда</span></div>
-<div class="si2"><span class="de">der Abend</span><span class="ru">вечер</span></div>
-<div class="si2"><span class="de">die Nacht</span><span class="ru">ночь</span></div>
-<div class="si2"><span class="de">der Tag</span><span class="ru">день</span></div>
+<div class="si2 sitem" data-de="der morgen" data-ru="утро"><span class="de">der Morgen</span><span class="ru">утро</span></div>
+<div class="si2 sitem" data-de="der vormittag" data-ru="первая половина дня"><span class="de">der Vormittag</span><span class="ru">первая половина дня</span></div>
+<div class="si2 sitem" data-de="der mittag" data-ru="полдень"><span class="de">der Mittag</span><span class="ru">полдень</span></div>
+<div class="si2 sitem" data-de="der nachmittag" data-ru="вторая половина дня / после обеда"><span class="de">der Nachmittag</span><span class="ru">вторая половина дня / после обеда</span></div>
+<div class="si2 sitem" data-de="der abend" data-ru="вечер"><span class="de">der Abend</span><span class="ru">вечер</span></div>
+<div class="si2 sitem" data-de="die nacht" data-ru="ночь"><span class="de">die Nacht</span><span class="ru">ночь</span></div>
+<div class="si2 sitem" data-de="der tag" data-ru="день"><span class="de">der Tag</span><span class="ru">день</span></div>
 </div></div>
 <div class="subsec"><div class="subh">Дни недели — Wochentage</div><div class="sg">
-<div class="si2"><span class="de">der Montag</span><span class="ru">понедельник</span></div>
-<div class="si2"><span class="de">der Dienstag</span><span class="ru">вторник</span></div>
-<div class="si2"><span class="de">der Mittwoch</span><span class="ru">среда</span></div>
-<div class="si2"><span class="de">der Donnerstag</span><span class="ru">четверг</span></div>
-<div class="si2"><span class="de">der Freitag</span><span class="ru">пятница</span></div>
-<div class="si2"><span class="de">der Samstag / Sonnabend</span><span class="ru">суббота</span></div>
-<div class="si2"><span class="de">der Sonntag</span><span class="ru">воскресенье</span></div>
-<div class="si2"><span class="de">das Wochenende</span><span class="ru">выходные</span></div>
+<div class="si2 sitem" data-de="der montag" data-ru="понедельник"><span class="de">der Montag</span><span class="ru">понедельник</span></div>
+<div class="si2 sitem" data-de="der dienstag" data-ru="вторник"><span class="de">der Dienstag</span><span class="ru">вторник</span></div>
+<div class="si2 sitem" data-de="der mittwoch" data-ru="среда"><span class="de">der Mittwoch</span><span class="ru">среда</span></div>
+<div class="si2 sitem" data-de="der donnerstag" data-ru="четверг"><span class="de">der Donnerstag</span><span class="ru">четверг</span></div>
+<div class="si2 sitem" data-de="der freitag" data-ru="пятница"><span class="de">der Freitag</span><span class="ru">пятница</span></div>
+<div class="si2 sitem" data-de="der samstag / sonnabend" data-ru="суббота"><span class="de">der Samstag / Sonnabend</span><span class="ru">суббота</span></div>
+<div class="si2 sitem" data-de="der sonntag" data-ru="воскресенье"><span class="de">der Sonntag</span><span class="ru">воскресенье</span></div>
+<div class="si2 sitem" data-de="das wochenende" data-ru="выходные"><span class="de">das Wochenende</span><span class="ru">выходные</span></div>
 </div></div>
 <div class="subsec"><div class="subh">Месяцы — Monatsnamen</div><div class="sg">
-<div class="si2"><span class="de">der Januar</span><span class="ru">январь</span></div>
-<div class="si2"><span class="de">der Februar</span><span class="ru">февраль</span></div>
-<div class="si2"><span class="de">der März</span><span class="ru">март</span></div>
-<div class="si2"><span class="de">der April</span><span class="ru">апрель</span></div>
-<div class="si2"><span class="de">der Mai</span><span class="ru">май</span></div>
-<div class="si2"><span class="de">der Juni</span><span class="ru">июнь</span></div>
-<div class="si2"><span class="de">der Juli</span><span class="ru">июль</span></div>
-<div class="si2"><span class="de">der August</span><span class="ru">август</span></div>
-<div class="si2"><span class="de">der September</span><span class="ru">сентябрь</span></div>
-<div class="si2"><span class="de">der Oktober</span><span class="ru">октябрь</span></div>
-<div class="si2"><span class="de">der November</span><span class="ru">ноябрь</span></div>
-<div class="si2"><span class="de">der Dezember</span><span class="ru">декабрь</span></div>
+<div class="si2 sitem" data-de="der januar" data-ru="январь"><span class="de">der Januar</span><span class="ru">январь</span></div>
+<div class="si2 sitem" data-de="der februar" data-ru="февраль"><span class="de">der Februar</span><span class="ru">февраль</span></div>
+<div class="si2 sitem" data-de="der märz" data-ru="март"><span class="de">der März</span><span class="ru">март</span></div>
+<div class="si2 sitem" data-de="der april" data-ru="апрель"><span class="de">der April</span><span class="ru">апрель</span></div>
+<div class="si2 sitem" data-de="der mai" data-ru="май"><span class="de">der Mai</span><span class="ru">май</span></div>
+<div class="si2 sitem" data-de="der juni" data-ru="июнь"><span class="de">der Juni</span><span class="ru">июнь</span></div>
+<div class="si2 sitem" data-de="der juli" data-ru="июль"><span class="de">der Juli</span><span class="ru">июль</span></div>
+<div class="si2 sitem" data-de="der august" data-ru="август"><span class="de">der August</span><span class="ru">август</span></div>
+<div class="si2 sitem" data-de="der september" data-ru="сентябрь"><span class="de">der September</span><span class="ru">сентябрь</span></div>
+<div class="si2 sitem" data-de="der oktober" data-ru="октябрь"><span class="de">der Oktober</span><span class="ru">октябрь</span></div>
+<div class="si2 sitem" data-de="der november" data-ru="ноябрь"><span class="de">der November</span><span class="ru">ноябрь</span></div>
+<div class="si2 sitem" data-de="der dezember" data-ru="декабрь"><span class="de">der Dezember</span><span class="ru">декабрь</span></div>
 </div></div>
 <div class="subsec"><div class="subh">Времена года — Jahreszeiten</div><div class="sg">
-<div class="si2"><span class="de">der Frühling / das Frühjahr</span><span class="ru">весна</span></div>
-<div class="si2"><span class="de">der Sommer</span><span class="ru">лето</span></div>
-<div class="si2"><span class="de">der Herbst</span><span class="ru">осень</span></div>
-<div class="si2"><span class="de">der Winter</span><span class="ru">зима</span></div>
+<div class="si2 sitem" data-de="der frühling / das frühjahr" data-ru="весна"><span class="de">der Frühling / das Frühjahr</span><span class="ru">весна</span></div>
+<div class="si2 sitem" data-de="der sommer" data-ru="лето"><span class="de">der Sommer</span><span class="ru">лето</span></div>
+<div class="si2 sitem" data-de="der herbst" data-ru="осень"><span class="de">der Herbst</span><span class="ru">осень</span></div>
+<div class="si2 sitem" data-de="der winter" data-ru="зима"><span class="de">der Winter</span><span class="ru">зима</span></div>
 </div></div>
 <div class="subsec"><div class="subh">Единицы времени — Zeitmaße</div><div class="sg">
-<div class="si2"><span class="de">die Sekunde, -n</span><span class="ru">секунда</span></div>
-<div class="si2"><span class="de">die Minute, -n</span><span class="ru">минута</span></div>
-<div class="si2"><span class="de">die Stunde, -n</span><span class="ru">час</span></div>
-<div class="si2"><span class="de">der Tag, -e</span><span class="ru">день</span></div>
-<div class="si2"><span class="de">die Woche, -n</span><span class="ru">неделя</span></div>
-<div class="si2"><span class="de">der Monat, -e</span><span class="ru">месяц</span></div>
-<div class="si2"><span class="de">das Jahr, -e</span><span class="ru">год</span></div>
+<div class="si2 sitem" data-de="die sekunde, -n" data-ru="секунда"><span class="de">die Sekunde, -n</span><span class="ru">секунда</span></div>
+<div class="si2 sitem" data-de="die minute, -n" data-ru="минута"><span class="de">die Minute, -n</span><span class="ru">минута</span></div>
+<div class="si2 sitem" data-de="die stunde, -n" data-ru="час"><span class="de">die Stunde, -n</span><span class="ru">час</span></div>
+<div class="si2 sitem" data-de="der tag, -e" data-ru="день"><span class="de">der Tag, -e</span><span class="ru">день</span></div>
+<div class="si2 sitem" data-de="die woche, -n" data-ru="неделя"><span class="de">die Woche, -n</span><span class="ru">неделя</span></div>
+<div class="si2 sitem" data-de="der monat, -e" data-ru="месяц"><span class="de">der Monat, -e</span><span class="ru">месяц</span></div>
+<div class="si2 sitem" data-de="das jahr, -e" data-ru="год"><span class="de">das Jahr, -e</span><span class="ru">год</span></div>
 </div></div>
 </div>
 <div class="sec" id="farben">
 <div class="sh"><span class="sico2">&#127912;</span><div><div class="st">Цвета и стороны света &mdash; Farben · Himmelsrichtungen</div><div class="ss">Основные цвета и географические направления</div></div></div>
 <div class="sdesc">Цвета согласуются с существительным: ein roter Apfel, eine rote Rose, ein rotes Auto. Стороны света всегда с заглавной буквы: der Norden, der Süden.</div>
 <div class="subsec"><div class="subh">Цвета — Farben</div><div class="cg">
-<div class="ci"><div class="cs" style="background:#1a1a1a"></div><div class="ct"><div class="de">schwarz</div><div class="ru">чёрный</div></div></div>
-<div class="ci"><div class="cs" style="background:#f5f5f5"></div><div class="ct"><div class="de">weiß</div><div class="ru">белый</div></div></div>
-<div class="ci"><div class="cs" style="background:#808080"></div><div class="ct"><div class="de">grau</div><div class="ru">серый</div></div></div>
-<div class="ci"><div class="cs" style="background:#dc2626"></div><div class="ct"><div class="de">rot</div><div class="ru">красный</div></div></div>
-<div class="ci"><div class="cs" style="background:#1d4ed8"></div><div class="ct"><div class="de">blau</div><div class="ru">синий</div></div></div>
-<div class="ci"><div class="cs" style="background:#16a34a"></div><div class="ct"><div class="de">grün</div><div class="ru">зелёный</div></div></div>
-<div class="ci"><div class="cs" style="background:#ca8a04"></div><div class="ct"><div class="de">gelb</div><div class="ru">жёлтый</div></div></div>
-<div class="ci"><div class="cs" style="background:#92400e"></div><div class="ct"><div class="de">braun</div><div class="ru">коричневый</div></div></div>
-<div class="ci"><div class="cs" style="background:#ea580c"></div><div class="ct"><div class="de">orange</div><div class="ru">оранжевый</div></div></div>
-<div class="ci"><div class="cs" style="background:#ec4899"></div><div class="ct"><div class="de">rosa</div><div class="ru">розовый</div></div></div>
-<div class="ci"><div class="cs" style="background:#7c3aed"></div><div class="ct"><div class="de">lila / violett</div><div class="ru">фиолетовый</div></div></div>
-<div class="ci"><div class="cs" style="background:#d4b896"></div><div class="ct"><div class="de">beige</div><div class="ru">бежевый</div></div></div>
+<div class="ci sitem" data-de="schwarz" data-ru="чёрный"><div class="cs" style="background:#1a1a1a"></div><div class="ct"><div class="de">schwarz</div><div class="ru">чёрный</div></div></div>
+<div class="ci sitem" data-de="weiß" data-ru="белый"><div class="cs" style="background:#f5f5f5"></div><div class="ct"><div class="de">weiß</div><div class="ru">белый</div></div></div>
+<div class="ci sitem" data-de="grau" data-ru="серый"><div class="cs" style="background:#808080"></div><div class="ct"><div class="de">grau</div><div class="ru">серый</div></div></div>
+<div class="ci sitem" data-de="rot" data-ru="красный"><div class="cs" style="background:#dc2626"></div><div class="ct"><div class="de">rot</div><div class="ru">красный</div></div></div>
+<div class="ci sitem" data-de="blau" data-ru="синий"><div class="cs" style="background:#1d4ed8"></div><div class="ct"><div class="de">blau</div><div class="ru">синий</div></div></div>
+<div class="ci sitem" data-de="grün" data-ru="зелёный"><div class="cs" style="background:#16a34a"></div><div class="ct"><div class="de">grün</div><div class="ru">зелёный</div></div></div>
+<div class="ci sitem" data-de="gelb" data-ru="жёлтый"><div class="cs" style="background:#ca8a04"></div><div class="ct"><div class="de">gelb</div><div class="ru">жёлтый</div></div></div>
+<div class="ci sitem" data-de="braun" data-ru="коричневый"><div class="cs" style="background:#92400e"></div><div class="ct"><div class="de">braun</div><div class="ru">коричневый</div></div></div>
+<div class="ci sitem" data-de="orange" data-ru="оранжевый"><div class="cs" style="background:#ea580c"></div><div class="ct"><div class="de">orange</div><div class="ru">оранжевый</div></div></div>
+<div class="ci sitem" data-de="rosa" data-ru="розовый"><div class="cs" style="background:#ec4899"></div><div class="ct"><div class="de">rosa</div><div class="ru">розовый</div></div></div>
+<div class="ci sitem" data-de="lila / violett" data-ru="фиолетовый"><div class="cs" style="background:#7c3aed"></div><div class="ct"><div class="de">lila / violett</div><div class="ru">фиолетовый</div></div></div>
+<div class="ci sitem" data-de="beige" data-ru="бежевый"><div class="cs" style="background:#d4b896"></div><div class="ct"><div class="de">beige</div><div class="ru">бежевый</div></div></div>
 </div></div>
 <div class="subsec"><div class="subh">Стороны света — Himmelsrichtungen</div><div class="dg">
-<div class="di"><div class="de">der Norden</div><div class="ru">Север (N)</div></div>
-<div class="di"><div class="de">der Süden</div><div class="ru">Юг (S)</div></div>
-<div class="di"><div class="de">der Westen</div><div class="ru">Запад (W)</div></div>
-<div class="di"><div class="de">der Osten</div><div class="ru">Восток (O)</div></div>
+<div class="di sitem" data-de="der norden" data-ru="север (n)"><div class="de">der Norden</div><div class="ru">Север (N)</div></div>
+<div class="di sitem" data-de="der süden" data-ru="юг (s)"><div class="de">der Süden</div><div class="ru">Юг (S)</div></div>
+<div class="di sitem" data-de="der westen" data-ru="запад (w)"><div class="de">der Westen</div><div class="ru">Запад (W)</div></div>
+<div class="di sitem" data-de="der osten" data-ru="восток (o)"><div class="de">der Osten</div><div class="ru">Восток (O)</div></div>
 </div></div>
 </div>
 <div class="sec" id="masse">
 <div class="sh"><span class="sico2">&#128207;</span><div><div class="st">Меры и деньги &mdash; Maße · Gewichte · Währungen</div><div class="ss">Единицы измерения, вес, расстояние, температура</div></div></div>
 <div class="sdesc">Запятая в немецком = точка в русском: 1,15 m = 1.15 м. Тысячи разделяются точкой: 1.000 = 1 000.</div>
 <div class="mg">
-<div class="mi"><span class="de">1 m — ein Meter</span><span class="ru">1 метр</span></div>
-<div class="mi"><span class="de">1 cm — ein Zentimeter</span><span class="ru">1 сантиметр</span></div>
-<div class="mi"><span class="de">1 km — ein Kilometer</span><span class="ru">1 километр</span></div>
-<div class="mi"><span class="de">1 m² — ein Quadratmeter</span><span class="ru">1 квадратный метр</span></div>
-<div class="mi"><span class="de">1 g — ein Gramm</span><span class="ru">1 грамм</span></div>
-<div class="mi"><span class="de">500 g — ein Pfund</span><span class="ru">500 г = 1 фунт</span></div>
-<div class="mi"><span class="de">1 kg — ein Kilogramm</span><span class="ru">1 килограмм</span></div>
-<div class="mi"><span class="de">1 l — ein Liter</span><span class="ru">1 литр</span></div>
-<div class="mi"><span class="de">1 % — ein Prozent</span><span class="ru">1 процент</span></div>
-<div class="mi"><span class="de">–1° — minus ein Grad</span><span class="ru">−1 градус (ниже нуля)</span></div>
-<div class="mi"><span class="de">+4° — plus vier Grad</span><span class="ru">плюс четыре градуса</span></div>
-<div class="mi"><span class="de">1 € — ein Euro</span><span class="ru">1 евро</span></div>
-<div class="mi"><span class="de">1 ct — ein Cent</span><span class="ru">1 цент (1/100 евро)</span></div>
+<div class="mi sitem" data-de="1 m — ein meter" data-ru="1 метр"><span class="de">1 m — ein Meter</span><span class="ru">1 метр</span></div>
+<div class="mi sitem" data-de="1 cm — ein zentimeter" data-ru="1 сантиметр"><span class="de">1 cm — ein Zentimeter</span><span class="ru">1 сантиметр</span></div>
+<div class="mi sitem" data-de="1 km — ein kilometer" data-ru="1 километр"><span class="de">1 km — ein Kilometer</span><span class="ru">1 километр</span></div>
+<div class="mi sitem" data-de="1 m² — ein quadratmeter" data-ru="1 квадратный метр"><span class="de">1 m² — ein Quadratmeter</span><span class="ru">1 квадратный метр</span></div>
+<div class="mi sitem" data-de="1 g — ein gramm" data-ru="1 грамм"><span class="de">1 g — ein Gramm</span><span class="ru">1 грамм</span></div>
+<div class="mi sitem" data-de="500 g — ein pfund" data-ru="500 г = 1 фунт"><span class="de">500 g — ein Pfund</span><span class="ru">500 г = 1 фунт</span></div>
+<div class="mi sitem" data-de="1 kg — ein kilogramm" data-ru="1 килограмм"><span class="de">1 kg — ein Kilogramm</span><span class="ru">1 килограмм</span></div>
+<div class="mi sitem" data-de="1 l — ein liter" data-ru="1 литр"><span class="de">1 l — ein Liter</span><span class="ru">1 литр</span></div>
+<div class="mi sitem" data-de="1 % — ein prozent" data-ru="1 процент"><span class="de">1 % — ein Prozent</span><span class="ru">1 процент</span></div>
+<div class="mi sitem" data-de="–1° — minus ein grad" data-ru="−1 градус (ниже нуля)"><span class="de">–1° — minus ein Grad</span><span class="ru">−1 градус (ниже нуля)</span></div>
+<div class="mi sitem" data-de="+4° — plus vier grad" data-ru="плюс четыре градуса"><span class="de">+4° — plus vier Grad</span><span class="ru">плюс четыре градуса</span></div>
+<div class="mi sitem" data-de="1 € — ein euro" data-ru="1 евро"><span class="de">1 € — ein Euro</span><span class="ru">1 евро</span></div>
+<div class="mi sitem" data-de="1 ct — ein cent" data-ru="1 цент (1/100 евро)"><span class="de">1 ct — ein Cent</span><span class="ru">1 цент (1/100 евро)</span></div>
 </div>
 </div>
 <div class="sec" id="laender">
 <div class="sh"><span class="sico2">&#127758;</span><div><div class="st">Страны и национальности &mdash; Länder · Nationalitäten</div><div class="ss">Страны, жители, прилагательные</div></div></div>
 <div class="sdesc">Схема: страна → житель (м/ж) → прилагательное. Пример: <b>Türkei</b> → Türke / Türkin → türkisch &bull; <b>Russland</b> → Russe / Russin → russisch &bull; <b>Deutschland</b> → Deutscher / Deutsche → deutsch &bull; <b>Frankreich</b> → Franzose / Französin → französisch. Россия особо важна для Ивана: <b>Russland, der Russe / die Russin, russisch</b>.</div>
 <div class="ng">
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Deutschland</div><div style="font-size:11px;color:var(--text2)">Германия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Deutsche / die Deutsche</div><div style="font-size:11px;color:var(--teal)">немец / немка</div><div style="font-size:11.5px;color:var(--text)">deutsch</div><div style="font-size:11px;color:var(--text3)">немецкий</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Russland</div><div style="font-size:11px;color:var(--text2)">Россия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Russe / die Russin</div><div style="font-size:11px;color:var(--teal)">русский / русская</div><div style="font-size:11.5px;color:var(--text)">russisch</div><div style="font-size:11px;color:var(--text3)">русский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Europa</div><div style="font-size:11px;color:var(--text2)">Европа</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Europäer</div><div style="font-size:11px;color:var(--teal)">европеец</div><div style="font-size:11.5px;color:var(--text)">europäisch</div><div style="font-size:11px;color:var(--text3)">европейский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Türkei</div><div style="font-size:11px;color:var(--text2)">Турция</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Türke / die Türkin</div><div style="font-size:11px;color:var(--teal)">турок / турчанка</div><div style="font-size:11.5px;color:var(--text)">türkisch</div><div style="font-size:11px;color:var(--text3)">турецкий</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Frankreich</div><div style="font-size:11px;color:var(--text2)">Франция</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Franzose / die Französin</div><div style="font-size:11px;color:var(--teal)">француз</div><div style="font-size:11.5px;color:var(--text)">französisch</div><div style="font-size:11px;color:var(--text3)">французский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Spanien</div><div style="font-size:11px;color:var(--text2)">Испания</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Spanier / die Spanierin</div><div style="font-size:11px;color:var(--teal)">испанец</div><div style="font-size:11.5px;color:var(--text)">spanisch</div><div style="font-size:11px;color:var(--text3)">испанский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Italien</div><div style="font-size:11px;color:var(--text2)">Италия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Italiener / die Italienerin</div><div style="font-size:11px;color:var(--teal)">итальянец</div><div style="font-size:11.5px;color:var(--text)">italienisch</div><div style="font-size:11px;color:var(--text3)">итальянский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Polen</div><div style="font-size:11px;color:var(--text2)">Польша</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Pole / die Polin</div><div style="font-size:11px;color:var(--teal)">поляк</div><div style="font-size:11.5px;color:var(--text)">polnisch</div><div style="font-size:11px;color:var(--text3)">польский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Japan</div><div style="font-size:11px;color:var(--text2)">Япония</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Japaner / die Japanerin</div><div style="font-size:11px;color:var(--teal)">японец</div><div style="font-size:11.5px;color:var(--text)">japanisch</div><div style="font-size:11px;color:var(--text3)">японский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">China</div><div style="font-size:11px;color:var(--text2)">Китай</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Chinese / die Chinesin</div><div style="font-size:11px;color:var(--teal)">китаец</div><div style="font-size:11.5px;color:var(--text)">chinesisch</div><div style="font-size:11px;color:var(--text3)">китайский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Mexiko</div><div style="font-size:11px;color:var(--text2)">Мексика</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Mexikaner / die Mexikanerin</div><div style="font-size:11px;color:var(--teal)">мексиканец</div><div style="font-size:11.5px;color:var(--text)">mexikanisch</div><div style="font-size:11px;color:var(--text3)">мексиканский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Finnland</div><div style="font-size:11px;color:var(--text2)">Финляндия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Finne / die Finnin</div><div style="font-size:11px;color:var(--teal)">финн</div><div style="font-size:11.5px;color:var(--text)">finnisch</div><div style="font-size:11px;color:var(--text3)">финский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Brasilien</div><div style="font-size:11px;color:var(--text2)">Бразилия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Brasilianer / die Brasilianerin</div><div style="font-size:11px;color:var(--teal)">бразилец</div><div style="font-size:11.5px;color:var(--text)">brasilianisch</div><div style="font-size:11px;color:var(--text3)">бразильский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Österreich</div><div style="font-size:11px;color:var(--text2)">Австрия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Österreicher / die Österreicherin</div><div style="font-size:11px;color:var(--teal)">австриец</div><div style="font-size:11.5px;color:var(--text)">österreichisch</div><div style="font-size:11px;color:var(--text3)">австрийский</div></div>
-<div class="ni" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Schweiz</div><div style="font-size:11px;color:var(--text2)">Швейцария</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Schweizer / die Schweizerin</div><div style="font-size:11px;color:var(--teal)">швейцарец</div><div style="font-size:11.5px;color:var(--text)">schweizerisch</div><div style="font-size:11px;color:var(--text3)">швейцарский</div></div>
+<div class="ni sitem" data-de="deutschland der deutsche / die deutsche deutsch" data-ru="германия немец / немка немецкий" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Deutschland</div><div style="font-size:11px;color:var(--text2)">Германия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Deutsche / die Deutsche</div><div style="font-size:11px;color:var(--teal)">немец / немка</div><div style="font-size:11.5px;color:var(--text)">deutsch</div><div style="font-size:11px;color:var(--text3)">немецкий</div></div>
+<div class="ni sitem" data-de="russland der russe / die russin russisch" data-ru="россия русский / русская русский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Russland</div><div style="font-size:11px;color:var(--text2)">Россия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Russe / die Russin</div><div style="font-size:11px;color:var(--teal)">русский / русская</div><div style="font-size:11.5px;color:var(--text)">russisch</div><div style="font-size:11px;color:var(--text3)">русский</div></div>
+<div class="ni sitem" data-de="europa der europäer europäisch" data-ru="европа европеец европейский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Europa</div><div style="font-size:11px;color:var(--text2)">Европа</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Europäer</div><div style="font-size:11px;color:var(--teal)">европеец</div><div style="font-size:11.5px;color:var(--text)">europäisch</div><div style="font-size:11px;color:var(--text3)">европейский</div></div>
+<div class="ni sitem" data-de="türkei der türke / die türkin türkisch" data-ru="турция турок / турчанка турецкий" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Türkei</div><div style="font-size:11px;color:var(--text2)">Турция</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Türke / die Türkin</div><div style="font-size:11px;color:var(--teal)">турок / турчанка</div><div style="font-size:11.5px;color:var(--text)">türkisch</div><div style="font-size:11px;color:var(--text3)">турецкий</div></div>
+<div class="ni sitem" data-de="frankreich der franzose / die französin französisch" data-ru="франция француз французский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Frankreich</div><div style="font-size:11px;color:var(--text2)">Франция</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Franzose / die Französin</div><div style="font-size:11px;color:var(--teal)">француз</div><div style="font-size:11.5px;color:var(--text)">französisch</div><div style="font-size:11px;color:var(--text3)">французский</div></div>
+<div class="ni sitem" data-de="spanien der spanier / die spanierin spanisch" data-ru="испания испанец испанский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Spanien</div><div style="font-size:11px;color:var(--text2)">Испания</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Spanier / die Spanierin</div><div style="font-size:11px;color:var(--teal)">испанец</div><div style="font-size:11.5px;color:var(--text)">spanisch</div><div style="font-size:11px;color:var(--text3)">испанский</div></div>
+<div class="ni sitem" data-de="italien der italiener / die italienerin italienisch" data-ru="италия итальянец итальянский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Italien</div><div style="font-size:11px;color:var(--text2)">Италия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Italiener / die Italienerin</div><div style="font-size:11px;color:var(--teal)">итальянец</div><div style="font-size:11.5px;color:var(--text)">italienisch</div><div style="font-size:11px;color:var(--text3)">итальянский</div></div>
+<div class="ni sitem" data-de="polen der pole / die polin polnisch" data-ru="польша поляк польский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Polen</div><div style="font-size:11px;color:var(--text2)">Польша</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Pole / die Polin</div><div style="font-size:11px;color:var(--teal)">поляк</div><div style="font-size:11.5px;color:var(--text)">polnisch</div><div style="font-size:11px;color:var(--text3)">польский</div></div>
+<div class="ni sitem" data-de="japan der japaner / die japanerin japanisch" data-ru="япония японец японский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Japan</div><div style="font-size:11px;color:var(--text2)">Япония</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Japaner / die Japanerin</div><div style="font-size:11px;color:var(--teal)">японец</div><div style="font-size:11.5px;color:var(--text)">japanisch</div><div style="font-size:11px;color:var(--text3)">японский</div></div>
+<div class="ni sitem" data-de="china der chinese / die chinesin chinesisch" data-ru="китай китаец китайский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">China</div><div style="font-size:11px;color:var(--text2)">Китай</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Chinese / die Chinesin</div><div style="font-size:11px;color:var(--teal)">китаец</div><div style="font-size:11.5px;color:var(--text)">chinesisch</div><div style="font-size:11px;color:var(--text3)">китайский</div></div>
+<div class="ni sitem" data-de="mexiko der mexikaner / die mexikanerin mexikanisch" data-ru="мексика мексиканец мексиканский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Mexiko</div><div style="font-size:11px;color:var(--text2)">Мексика</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Mexikaner / die Mexikanerin</div><div style="font-size:11px;color:var(--teal)">мексиканец</div><div style="font-size:11.5px;color:var(--text)">mexikanisch</div><div style="font-size:11px;color:var(--text3)">мексиканский</div></div>
+<div class="ni sitem" data-de="finnland der finne / die finnin finnisch" data-ru="финляндия финн финский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Finnland</div><div style="font-size:11px;color:var(--text2)">Финляндия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Finne / die Finnin</div><div style="font-size:11px;color:var(--teal)">финн</div><div style="font-size:11.5px;color:var(--text)">finnisch</div><div style="font-size:11px;color:var(--text3)">финский</div></div>
+<div class="ni sitem" data-de="brasilien der brasilianer / die brasilianerin brasilianisch" data-ru="бразилия бразилец бразильский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Brasilien</div><div style="font-size:11px;color:var(--text2)">Бразилия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Brasilianer / die Brasilianerin</div><div style="font-size:11px;color:var(--teal)">бразилец</div><div style="font-size:11.5px;color:var(--text)">brasilianisch</div><div style="font-size:11px;color:var(--text3)">бразильский</div></div>
+<div class="ni sitem" data-de="österreich der österreicher / die österreicherin österreichisch" data-ru="австрия австриец австрийский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Österreich</div><div style="font-size:11px;color:var(--text2)">Австрия</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Österreicher / die Österreicherin</div><div style="font-size:11px;color:var(--teal)">австриец</div><div style="font-size:11.5px;color:var(--text)">österreichisch</div><div style="font-size:11px;color:var(--text3)">австрийский</div></div>
+<div class="ni sitem" data-de="schweiz der schweizer / die schweizerin schweizerisch" data-ru="швейцария швейцарец швейцарский" style="flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px"><div style="font-size:13px;font-weight:700;color:var(--accent)">Schweiz</div><div style="font-size:11px;color:var(--text2)">Швейцария</div><div style="font-size:11.5px;color:var(--text);margin-top:3px">der Schweizer / die Schweizerin</div><div style="font-size:11px;color:var(--teal)">швейцарец</div><div style="font-size:11.5px;color:var(--text)">schweizerisch</div><div style="font-size:11px;color:var(--text3)">швейцарский</div></div>
 </div>
 </div>
 <div class="sec" id="person">
@@ -1379,24 +1379,23 @@ var Progress = {
 // ══════════════════════════════════════════════════════════
 function fw(){
   var q=document.getElementById('si').value.toLowerCase().trim();
-  var vis=0;
 
   // Обзорная сетка разделов — скрывать при поиске
   var ov=document.getElementById('overview');
   if(ov) ov.style.display=q?'none':'';
 
   if(!q){
-    // Сброс — всё показать
-    document.querySelectorAll('.wc').forEach(function(c){c.classList.remove('hidden');});
-    document.querySelectorAll('.ni,.si2,.mi,.eb,.di,.ci').forEach(function(c){c.style.display='';});
+    document.querySelectorAll('.wc,.sitem').forEach(function(c){c.classList.remove('hidden');});
     document.querySelectorAll('.sec').forEach(function(s){s.style.display='';});
     document.getElementById('sc').textContent='';
     document.getElementById('no-res').style.display='none';
     return;
   }
 
-  // Поиск в карточках .wc (основной словарь)
-  document.querySelectorAll('.wc').forEach(function(c){
+  var vis=0;
+
+  // Единая фильтрация: .wc (словарные карточки) + .sitem (числа, дни, цвета, меры, страны и др.)
+  document.querySelectorAll('.wc,.sitem').forEach(function(c){
     var de=c.dataset.de||'', ru=c.dataset.ru||'';
     var ex=(c.querySelector('.wex')||{}).textContent||'';
     var show=de.includes(q)||ru.includes(q)||ex.toLowerCase().includes(q);
@@ -1404,21 +1403,10 @@ function fw(){
     if(show) vis++;
   });
 
-  // Поиск в специальных элементах (числа, календарь, меры, цвета и т.д.)
-  document.querySelectorAll('.ni,.si2,.mi,.eb,.di,.ci').forEach(function(c){
-    var show=c.textContent.toLowerCase().includes(q);
-    c.style.display=show?'':'none';
-    if(show) vis++;
-  });
-
-  // Показать/скрыть разделы
+  // Показать/скрыть каждый раздел — если в нём есть хотя бы одна видимая карточка
   document.querySelectorAll('.sec').forEach(function(s){
-    var wVis=s.querySelectorAll('.wc:not(.hidden)').length;
-    var sVis=0;
-    s.querySelectorAll('.ni,.si2,.mi,.eb,.di,.ci').forEach(function(el){
-      if(el.style.display!=='none') sVis++;
-    });
-    s.style.display=(wVis+sVis)>0?'':'none';
+    var anyVisible=s.querySelector('.wc:not(.hidden),.sitem:not(.hidden)')!==null;
+    s.style.display=anyVisible?'':'none';
   });
 
   document.getElementById('sc').textContent='Найдено: '+vis;
